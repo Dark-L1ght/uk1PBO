@@ -38,4 +38,13 @@ public class Product {
     public void displayDetails() {
         System.out.println("Product ID: " + id + ", Name: " + name + ", Price: $" + price);
     }
+
+    //displayDetails yang di Overload untuk menampilan harga secara optional
+    public void displayDetails(boolean showPrice) {
+        if (showPrice) {
+            displayDetails(); // panggil method asli
+        } else {
+            System.out.println("Product ID: " + id + ", Name: " + name);
+        }
+    }
 }

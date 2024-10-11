@@ -3,17 +3,17 @@ class Electronics extends Product {
     private String brand;
     private int warrantyPeriod;
 
-    public Electronics(int id, String name, double price) {
-        super(id, name, price);
-        this.brand = "Generic";
-        this.warrantyPeriod = 1;
-    }
-
     // Overloading untuk menambah brand dan garansi
     public Electronics(int id, String name, double price, String brand, int warrantyPeriod) {
         super(id, name, price);
         this.brand = brand;
         this.warrantyPeriod = warrantyPeriod;
+    }
+
+    public Electronics(int id, String name, double price) {
+        super(id, name, price);
+        this.brand = "Generic";
+        this.warrantyPeriod = 1;
     }
 
     //Getter and Setter

@@ -2,7 +2,7 @@ public class User {
     private String username;
     private String password;
 
-    // Getters and Setters
+    // Setter dan getter
     public String getUsername() {
         return username;
     }
@@ -24,7 +24,7 @@ public class User {
         this.password = password;
     }
 
-    // Method to simulate user login
+    // Method untuk simulasi login user
     public boolean login(String username, String password) {
         return this.username.equals(username) && this.password.equals(password);
     }
